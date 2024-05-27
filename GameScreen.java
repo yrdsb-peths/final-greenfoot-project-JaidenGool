@@ -8,10 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class GameScreen extends World
 {
-
     public GameScreen()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(900, 700, 1, false); 
+        super(1440, 900, 1, false);
+        
+        Frame frame = new Frame();
+        addObject(frame, 1000, 450);
     }
 }
