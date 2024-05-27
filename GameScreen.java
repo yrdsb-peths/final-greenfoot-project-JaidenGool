@@ -14,5 +14,8 @@ public class GameScreen extends World
         
         Frame frame = new Frame();
         addObject(frame, 1000, 450);
+        
+        Cookie cookie = new Cookie();
+        addObject(cookie, getWidth()/4 -100, getHeight()/2);
     }
 }
