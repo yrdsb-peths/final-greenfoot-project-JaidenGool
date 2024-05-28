@@ -17,5 +17,8 @@ public class GameScreen extends World
         
         Cookie cookie = new Cookie();
         addObject(cookie, getWidth()/4 -100, getHeight()/2);
+        
+        ScoreDisplay scoreDisplay = new ScoreDisplay();
+        addObject(scoreDisplay, getWidth()/4 -100, 200);
     }
 }
