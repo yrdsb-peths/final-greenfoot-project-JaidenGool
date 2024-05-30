@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Cookie extends Actor
 {
+    GreenfootSound click = new GreenfootSound("cookieclick.mp3");
     public void act()
     {
         turn(-1);
@@ -15,6 +16,15 @@ public class Cookie extends Actor
         {
             ScoreDisplay.score++;
             turn(10);
+            if(click.isPlaying())
+            {
+                click.stop();
+                click.play();
+            }
+            else
+            {
+                click.play();
+            }
         }
     }
 }
