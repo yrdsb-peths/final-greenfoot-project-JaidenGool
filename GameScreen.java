@@ -13,6 +13,9 @@ public class GameScreen extends World
         // Creates a 1440x900 screen
         super(1440, 900, 1, false);
         
+        // Sets the order for objects
+        setPaintOrder(Cookie.class, GlowEffect.class);
+        
         // Border for upgrades and other interface objects
         Frame frame = new Frame();
         addObject(frame, 1000, 450);
@@ -24,5 +27,8 @@ public class GameScreen extends World
         // Label to display cookies owned
         ScoreDisplay scoreDisplay = new ScoreDisplay();
         addObject(scoreDisplay, getWidth()/4 -100, 200);
+        
+        GlowEffect glow = new GlowEffect();
+        addObject(glow, getWidth()/4 -100, getHeight()/2);
     }
 }
