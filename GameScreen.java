@@ -28,6 +28,7 @@ public class GameScreen extends World
         ScoreDisplay scoreDisplay = new ScoreDisplay();
         addObject(scoreDisplay, getWidth()/4 -100, 200);
         
+        // Glow effect behind the cookie
         GlowEffect glow = new GlowEffect();
         addObject(glow, getWidth()/4 -100, getHeight()/2);
     }

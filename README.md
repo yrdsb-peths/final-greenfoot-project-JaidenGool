@@ -22,4 +22,8 @@
 - Using your cookies that you gain from clicking, you can buy upgrades to further boost your cookie collection.
 - Upgrade your methods to reach the final goal by gathering a certain large amount of cookies.
 
+## Credit
+- Music:
+    - [click - C418](https://youtu.be/yrn7eInApnc?si=Hpm-PQMG9HuFblXC)
+
 

@@ -16,15 +16,7 @@ public class Cookie extends Actor
         {
             ScoreDisplay.score++;
             turn(10);
-            if(click.isPlaying())
-            {
-                click.stop();
-                click.play();
-            }
-            else
-            {
-                click.play();
-            }
+            click.play();
         }
     }
 }

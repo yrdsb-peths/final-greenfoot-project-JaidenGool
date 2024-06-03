@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class StartScreen extends World
 {
+    //Background Music
+    GreenfootSound bgMusic = new GreenfootSound("click.mp3");
     //Title
     Label titleLabel = new Label("Cookie Clicker", 75);
     
@@ -19,6 +21,7 @@ public class StartScreen extends World
         
         addObject(titleLabel, getWidth()/2, 260);
         addObject(instructionLabel, getWidth()/2, 400);
+        bgMusic.playLoop();
     }
     
     public void act()
