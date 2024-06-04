@@ -15,6 +15,7 @@ public class ScoreDisplay extends Actor
     Color back = new Color(111,78,55, 255);
     public ScoreDisplay()
     {
+        scoreScaling = 1;
         score = 0;
         GreenfootImage image = new GreenfootImage("Cookies: " + score, 70, fore, back);
         setImage(image);

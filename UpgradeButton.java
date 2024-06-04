@@ -13,6 +13,13 @@ public class UpgradeButton extends Actor
     public static int upgradeReqScaling = 5;
     public static int score = 0;
     
+    public UpgradeButton()
+    {
+        upgradeReq = 100;
+        upgradeReqScaling = 5;
+        score = 0;
+    }
+    
     public void act()
     {
         buttonClicked();

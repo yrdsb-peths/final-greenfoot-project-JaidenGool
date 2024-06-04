@@ -15,6 +15,14 @@ public class StartScreen extends World
     
     //Instructions
     Label instructionLabel = new Label("Press Enter to start", 65);
+    
+    public static String factoryName = "";
+    
+    public void started()
+    {
+        Greenfoot.setWorld(new StartScreen());
+    }
+    
     public StartScreen()
     {    
         super(1440, 900, 1, false);
@@ -28,6 +36,7 @@ public class StartScreen extends World
     {
         if(Greenfoot.isKeyDown("Enter"))
         {
+            factoryName = Greenfoot.ask("Name your factory: ");
             Greenfoot.setWorld(new GameScreen());
         }
     }

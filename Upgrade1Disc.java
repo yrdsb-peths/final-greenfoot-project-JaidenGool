@@ -13,12 +13,12 @@ public class Upgrade1Disc extends Actor
     Color back = new Color(111,78,55, 255);
     public Upgrade1Disc()
     {
-        GreenfootImage image = new GreenfootImage("Increase cookies gained per click", 30, fore, back);
+        GreenfootImage image = new GreenfootImage("Click Upgrade\nIncrease cookies gained per click", 30, fore, back);
         setImage(image);
     }
     public void act()
     {
-        GreenfootImage image = new GreenfootImage("Increase cookies gained per click", 30, fore, back);
+        GreenfootImage image = new GreenfootImage("Click Upgrade\nIncrease cookies gained per click", 30, fore, back);
         setImage(image);
     }
 }

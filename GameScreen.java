@@ -30,7 +30,7 @@ public class GameScreen extends World
         
         //Description for click upgrade
         Upgrade1Disc upgrade1Disc = new Upgrade1Disc();
-        addObject(upgrade1Disc, 1010, 260);
+        addObject(upgrade1Disc, 1010, 230);
         
         // Glow effect behind the cookie
         GlowEffect glow = new GlowEffect();
@@ -38,10 +38,17 @@ public class GameScreen extends World
         
         //UpgradeButton for ClickUpgrade
         UpgradeButton upgradeButton = new UpgradeButton();
-        addObject(upgradeButton, 1270, 260);
+        addObject(upgradeButton, 1270, 232);
         
         //Image for ClickUpgrade
         CursorUpgrade cursorUpgrade = new CursorUpgrade();
-        addObject(cursorUpgrade, 750, 250);
+        addObject(cursorUpgrade, 750, 220);
+        
+        Upgrade1Cost upgrade1Cost = new Upgrade1Cost();
+        addObject(upgrade1Cost, 1010, 280);
+        
+        Label factoryName = new Label(StartScreen.factoryName + "'s factory", 50);
+        addObject(factoryName, getWidth()/4 - 85, 100);
+        
     }
 }
