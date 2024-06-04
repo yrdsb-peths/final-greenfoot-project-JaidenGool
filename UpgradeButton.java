@@ -9,17 +9,27 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class UpgradeButton extends Actor
 {
     GreenfootSound click = new GreenfootSound("cookieclick.mp3");
+    public static int upgradeReq = 100;
+    public static int upgradeReqScaling = 5;
+    public static int score = 0;
+    
     public void act()
     {
         buttonClicked();
+        score = ScoreDisplay.score;
     }
     
     public void buttonClicked()
     {
         if(Greenfoot.mouseClicked(this))
         {
-            ScoreDisplay.scoreScaling++;
-            click.play();
+            if(ScoreDisplay.score >= upgradeReq)
+            {
+                ScoreDisplay.scoreScaling++;
+                ScoreDisplay.score -= upgradeReq;
+                click.play();
+                upgradeReq *= upgradeReqScaling;
+            }
         }
     }
 }

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Cookie here.
+ * Cookie to be clicked by user
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jaiden Gool
+ * @version 2024-06-04
  */
 public class Cookie extends Actor
 {
@@ -15,6 +15,11 @@ public class Cookie extends Actor
         cookieClicked();
     }
     
+    /*
+     * This method checks if the cookie is clicked
+     * When the cookie is clicked, it adds 1 * the score scaling to the counter
+     * It will also play a click sound a turn slightly clockwise
+     */
     public void cookieClicked()
     {
         if(Greenfoot.mouseClicked(this))
