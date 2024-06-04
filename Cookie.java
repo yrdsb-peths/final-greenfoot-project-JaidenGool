@@ -12,9 +12,14 @@ public class Cookie extends Actor
     public void act()
     {
         turn(-1);
+        cookieClicked();
+    }
+    
+    public void cookieClicked()
+    {
         if(Greenfoot.mouseClicked(this))
         {
-            ScoreDisplay.score++;
+            ScoreDisplay.score+=(1 * (int)ScoreDisplay.scoreScaling);
             turn(10);
             click.play();
         }

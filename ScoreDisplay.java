@@ -10,10 +10,12 @@ import java.util.*;
 public class ScoreDisplay extends Actor
 {
     public static int score = 0;
+    public static int scoreScaling = 1;
     Color fore = new Color(255, 255, 255, 255);
     Color back = new Color(111,78,55, 255);
     public ScoreDisplay()
     {
+        score = 0;
         GreenfootImage image = new GreenfootImage("Cookies: " + score, 70, fore, back);
         setImage(image);
     }
