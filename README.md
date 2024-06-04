@@ -2,7 +2,7 @@
 
 ## Information
 - Created by: Jaiden Gool
-- Last updated: 2024-06-01
+- Last updated: 2024-06-04
 - Features to add:
     1. Upgrade system
     2. Numeronyms for bigger numbers
