@@ -7,11 +7,11 @@ import java.util.*;
  * @author Jaiden Gool
  * @version 2024-06-03
  */
-public class Upgrade1Disc extends Actor
+public class Upgrade2Disc extends Actor
 {
     Color fore = new Color(255, 255, 255, 255);
     Color back = new Color(189, 181, 159);
-    public Upgrade1Disc()
+    public Upgrade2Disc()
     {
         GreenfootImage image = new GreenfootImage("Click Upgrade\nIncrease cookies gained per click", 30, fore, back);
         setImage(image);

@@ -12,7 +12,7 @@ public class ScoreDisplay extends Actor
     public static int score = 0;
     public static int scoreScaling = 1;
     Color fore = new Color(255, 255, 255, 255);
-    Color back = new Color(111,78,55, 255);
+    Color back = new Color(0, 0, 0, 80);
     public ScoreDisplay()
     {
         scoreScaling = 1;

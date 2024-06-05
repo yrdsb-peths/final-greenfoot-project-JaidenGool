@@ -37,18 +37,36 @@ public class GameScreen extends World
         addObject(glow, getWidth()/4 -100, getHeight()/2);
         
         //UpgradeButton for ClickUpgrade
-        UpgradeButton upgradeButton = new UpgradeButton();
-        addObject(upgradeButton, 1270, 232);
+        Upgrade1Button upgrade1Button = new Upgrade1Button();
+        addObject(upgrade1Button, 1270, 232);
         
         //Image for ClickUpgrade
         CursorUpgrade cursorUpgrade = new CursorUpgrade();
         addObject(cursorUpgrade, 750, 220);
         
+        //Displays the cost for the first upgrade
         Upgrade1Cost upgrade1Cost = new Upgrade1Cost();
         addObject(upgrade1Cost, 1010, 280);
         
+        //Factory name
         Label factoryName = new Label(StartScreen.factoryName + "'s factory", 50);
         addObject(factoryName, getWidth()/4 - 85, 100);
+        
+        //Grandma image
+        Grandma grandma = new Grandma();
+        addObject(grandma, 750, 390);
+        
+        //Upgrade 2 description
+        Upgrade2Disc upgrade2Disc = new Upgrade2Disc();
+        addObject(upgrade2Disc, 1010, 380);
+        
+        //Upgrade 2 cost
+        Upgrade2Cost upgrade2Cost = new Upgrade2Cost();
+        addObject(upgrade2Cost, 1010, 430);
+        
+        //Upgrade 2 buy button
+        Upgrade2Button upgrade2Button = new Upgrade2Button();
+        addObject(upgrade2Button, 1270, 380);
         
     }
 }

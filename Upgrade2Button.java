@@ -6,14 +6,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Jaiden Gool 
  * @version 2024-06-03
  */
-public class UpgradeButton extends Actor
+public class Upgrade2Button extends Actor
 {
     GreenfootSound click = new GreenfootSound("cookieclick.mp3");
     public static int upgradeReq = 100;
     public static int upgradeReqScaling = 5;
     public static int score = 0;
     
-    public UpgradeButton()
+    public Upgrade2Button()
     {
         upgradeReq = 100;
         upgradeReqScaling = 5;
