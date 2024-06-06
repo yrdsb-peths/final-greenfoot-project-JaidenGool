@@ -8,10 +8,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class GameScreen extends World
 {
+    private SimpleTimer timer = new SimpleTimer();
+    
     public GameScreen()
     {   
         // Creates a 1440x900 screen
         super(1440, 900, 1, false);
+        
+        //Initialize timer
+        timer.mark();
         
         // Sets the order for objects
         setPaintOrder(Cookie.class, GlowEffect.class);
@@ -67,6 +72,17 @@ public class GameScreen extends World
         //Upgrade 2 buy button
         Upgrade2Button upgrade2Button = new Upgrade2Button();
         addObject(upgrade2Button, 1270, 380);
+        
+    }
+    
+    //Grandma upgrade
+    public void act()
+    {
+        if(timer.millisElapsed() > 1000 && Upgrade2Button.grandmaCount >=1)
+        {
+            ScoreDisplay.score += Upgrade2Button.grandmaCount;
+            timer.mark();
+        }
         
     }
 }

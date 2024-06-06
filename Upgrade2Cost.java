@@ -13,13 +13,13 @@ public class Upgrade2Cost extends Actor
     
     public void Upgrade2Cost()
     {
-        GreenfootImage image = new GreenfootImage("Cost: " + Upgrade1Button.upgradeReq, 24, fore, back);
+        GreenfootImage image = new GreenfootImage("Cost: " + Upgrade2Button.upgradeReq, 24, fore, back);
         setImage(image);
     }
     
     public void act()
     {
-        GreenfootImage image = new GreenfootImage("Cost: " + Upgrade1Button.upgradeReq, 24, fore, back);
+        GreenfootImage image = new GreenfootImage("Cost: " + Upgrade2Button.upgradeReq, 24, fore, back);
         setImage(image);
     }
 }

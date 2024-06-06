@@ -10,13 +10,14 @@ public class Upgrade2Button extends Actor
 {
     GreenfootSound click = new GreenfootSound("cookieclick.mp3");
     public static int upgradeReq = 100;
-    public static int upgradeReqScaling = 5;
+    public static int grandmaCount = 0;
+    public static int upgradeReqScaling = 2;
     public static int score = 0;
     
     public Upgrade2Button()
     {
-        upgradeReq = 100;
-        upgradeReqScaling = 5;
+        upgradeReq = 10;
+        grandmaCount = 0;
         score = 0;
     }
     
@@ -32,7 +33,7 @@ public class Upgrade2Button extends Actor
         {
             if(ScoreDisplay.score >= upgradeReq)
             {
-                ScoreDisplay.scoreScaling++;
+                grandmaCount++;
                 ScoreDisplay.score -= upgradeReq;
                 click.play();
                 upgradeReq *= upgradeReqScaling;
