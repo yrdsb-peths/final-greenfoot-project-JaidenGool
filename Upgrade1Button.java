@@ -12,12 +12,14 @@ public class Upgrade1Button extends Actor
     public static int upgradeReq = 100;
     public static int upgradeReqScaling = 5;
     public static int score = 0;
+    public static int cursorCount = 0;
     
     public Upgrade1Button()
     {
         upgradeReq = 100;
         upgradeReqScaling = 5;
         score = 0;
+        cursorCount = 0;
     }
     
     public void act()
@@ -35,6 +37,7 @@ public class Upgrade1Button extends Actor
                 ScoreDisplay.scoreScaling++;
                 ScoreDisplay.score -= upgradeReq;
                 click.play();
+                cursorCount++;
                 upgradeReq *= upgradeReqScaling;
             }
         }

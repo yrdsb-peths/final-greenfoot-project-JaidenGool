@@ -25,34 +25,6 @@ public class GameScreen extends World
         Frame frame = new Frame();
         addObject(frame, 1000, 450);
         
-        // Clickable cookie
-        Cookie cookie = new Cookie();
-        addObject(cookie, getWidth()/4 -100, getHeight()/2);
-        
-        // Label to display cookies owned
-        ScoreDisplay scoreDisplay = new ScoreDisplay();
-        addObject(scoreDisplay, getWidth()/4 -100, 200);
-        
-        //Description for click upgrade
-        Upgrade1Disc upgrade1Disc = new Upgrade1Disc();
-        addObject(upgrade1Disc, 1010, 230);
-        
-        // Glow effect behind the cookie
-        GlowEffect glow = new GlowEffect();
-        addObject(glow, getWidth()/4 -100, getHeight()/2);
-        
-        //UpgradeButton for ClickUpgrade
-        Upgrade1Button upgrade1Button = new Upgrade1Button();
-        addObject(upgrade1Button, 1270, 232);
-        
-        //Image for ClickUpgrade
-        CursorUpgrade cursorUpgrade = new CursorUpgrade();
-        addObject(cursorUpgrade, 750, 220);
-        
-        //Displays the cost for the first upgrade
-        Upgrade1Cost upgrade1Cost = new Upgrade1Cost();
-        addObject(upgrade1Cost, 1010, 280);
-        
         //Factory name
         Label factoryName = new Label(StartScreen.factoryName + "'s factory", 50);
         addObject(factoryName, getWidth()/4 - 85, 100);
@@ -60,6 +32,38 @@ public class GameScreen extends World
         //Grandma image
         Grandma grandma = new Grandma();
         addObject(grandma, 750, 390);
+        
+        //Image for ClickUpgrade
+        CursorUpgrade cursorUpgrade = new CursorUpgrade();
+        addObject(cursorUpgrade, 750, 220);
+        
+        // Clickable cookie
+        Cookie cookie = new Cookie();
+        addObject(cookie, getWidth()/4 -100, getHeight()/2);
+        
+        // Glow effect behind the cookie
+        GlowEffect glow = new GlowEffect();
+        addObject(glow, getWidth()/4 -100, getHeight()/2);
+        
+        // Label to display cookies owned
+        ScoreDisplay scoreDisplay = new ScoreDisplay();
+        addObject(scoreDisplay, getWidth()/4 -100, 200);
+        
+        //Upgrade 1 Description
+        Upgrade1Disc upgrade1Disc = new Upgrade1Disc();
+        addObject(upgrade1Disc, 1010, 230);
+        
+        //Upgrade 1 cost
+        Upgrade1Cost upgrade1Cost = new Upgrade1Cost();
+        addObject(upgrade1Cost, 1010, 280);
+        
+        //Upgrade 1 owned
+        Upgrade1Owned upgrade1Owned = new Upgrade1Owned();
+        addObject(upgrade1Owned, 1270, 212);
+        
+        //Upgrade 1 Buy Button
+        Upgrade1Button upgrade1Button = new Upgrade1Button();
+        addObject(upgrade1Button, 1270, 252);
         
         //Upgrade 2 description
         Upgrade2Disc upgrade2Disc = new Upgrade2Disc();
@@ -71,7 +75,11 @@ public class GameScreen extends World
         
         //Upgrade 2 buy button
         Upgrade2Button upgrade2Button = new Upgrade2Button();
-        addObject(upgrade2Button, 1270, 380);
+        addObject(upgrade2Button, 1270, 410);
+        
+        //Upgrade 2 owned
+        Upgrade2Owned upgrade2Owned = new Upgrade2Owned();
+        addObject(upgrade2Owned, 1270, 370);
         
     }
     
