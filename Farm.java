@@ -8,10 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Farm extends Actor
 {
-    /**
-     * Act - do whatever the Farm wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    public Farm()
+    {
+        GreenfootImage image = getImage();
+        image.scale(100, 100);
+    }
+    
     public void act()
     {
         // Add your action code here.

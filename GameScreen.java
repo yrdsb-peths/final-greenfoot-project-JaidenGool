@@ -29,6 +29,9 @@ public class GameScreen extends World
         Label factoryName = new Label(StartScreen.factoryName + "'s factory", 50);
         addObject(factoryName, getWidth()/4 - 85, 100);
         
+        Farm farm = new Farm();
+        addObject(farm, 750, 560);
+        
         //Grandma image
         Grandma grandma = new Grandma();
         addObject(grandma, 750, 390);
@@ -81,14 +84,41 @@ public class GameScreen extends World
         Upgrade2Owned upgrade2Owned = new Upgrade2Owned();
         addObject(upgrade2Owned, 1270, 370);
         
+        //Upgrade 3 description
+        Upgrade3Disc upgrade3Disc = new Upgrade3Disc();
+        addObject(upgrade3Disc, 1010, 530);
+        
+        //Upgrade 3 cost
+        Upgrade3Cost upgrade3Cost = new Upgrade3Cost();
+        addObject(upgrade3Cost, 1010, 580);
+        
+        //Upgrade 3 buy button
+        Upgrade3Button upgrade3Button = new Upgrade3Button();
+        addObject(upgrade3Button, 1270, 560);
+        
+        //Upgrade 3 owned
+        Upgrade3Owned upgrade3Owned = new Upgrade3Owned();
+        addObject(upgrade3Owned, 1270, 520);
+        
+        
     }
     
-    //Grandma upgrade
     public void act()
     {
+        //Grandma upgrade
         if(timer.millisElapsed() > 1000 && Upgrade2Button.grandmaCount >=1)
         {
             ScoreDisplay.score += Upgrade2Button.grandmaCount;
+        }
+        
+        //Farm upgrade
+        if(timer.millisElapsed() > 1000 && Upgrade3Button.farmCount >=1)
+        {
+            ScoreDisplay.score += (Upgrade3Button.farmCount *2);
+        }
+        
+        if(timer.millisElapsed() > 1000)
+        {
             timer.mark();
         }
         

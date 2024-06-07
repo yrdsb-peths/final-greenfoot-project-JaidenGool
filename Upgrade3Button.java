@@ -6,20 +6,19 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Jaiden Gool 
  * @version 2024-06-03
  */
-public class Upgrade1Button extends Actor
+public class Upgrade3Button extends Actor
 {
     GreenfootSound click = new GreenfootSound("cookieclick.mp3");
-    public static int upgradeReq = 100;
-    public static int upgradeReqScaling = 3;
+    public static int upgradeReq = 50;
+    public static int farmCount = 0;
+    public static int upgradeReqScaling = 2;
     public static int score = 0;
-    public static int cursorCount = 0;
     
-    public Upgrade1Button()
+    public Upgrade3Button()
     {
-        upgradeReq = 100;
-        upgradeReqScaling = 3;
+        upgradeReq = 50;
+        farmCount = 0;
         score = 0;
-        cursorCount = 0;
     }
     
     public void act()
@@ -34,10 +33,9 @@ public class Upgrade1Button extends Actor
         {
             if(ScoreDisplay.score >= upgradeReq)
             {
-                ScoreDisplay.scoreScaling++;
+                farmCount++;
                 ScoreDisplay.score -= upgradeReq;
                 click.play();
-                cursorCount++;
                 upgradeReq *= upgradeReqScaling;
             }
         }
