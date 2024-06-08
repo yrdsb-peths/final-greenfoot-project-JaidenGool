@@ -9,10 +9,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Cookie extends Actor
 {
     GreenfootSound click = new GreenfootSound("cookieclick.mp3");
+    
     public void act()
     {
         turn(-1);
         cookieClicked();
+        
+        if(Greenfoot.mouseClicked(null))
+        {
+            MouseInfo mouse = Greenfoot.getMouseInfo();
+            if(mouse != null)
+            {
+                getWorld().addObject(new ClickEffect(), mouse.getX(), mouse.getY());
+            }
+        }
     }
     
     /*
@@ -25,7 +35,7 @@ public class Cookie extends Actor
         if(Greenfoot.mouseClicked(this))
         {
             ScoreDisplay.score+=(1 * (int)ScoreDisplay.scoreScaling);
-            turn(10);
+            turn(5);
             click.play();
         }
     }

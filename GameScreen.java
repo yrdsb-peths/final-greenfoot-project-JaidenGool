@@ -19,7 +19,7 @@ public class GameScreen extends World
         timer.mark();
         
         // Sets the order for objects
-        setPaintOrder(Cookie.class, GlowEffect.class);
+        setPaintOrder(ClickEffect.class, Cookie.class, GlowEffect.class);
         
         // Border for upgrades and other interface objects
         Frame frame = new Frame();
