@@ -29,6 +29,11 @@ public class GameScreen extends World
         Label factoryName = new Label(StartScreen.factoryName + "'s factory", 50);
         addObject(factoryName, getWidth()/4 - 85, 100);
         
+        //Displays cookies owned
+        CookiesPS cookiesPs = new CookiesPS();
+        addObject(cookiesPs, getWidth()/4 - 85, getHeight()/2 + 200);
+        
+        //Farm image
         Farm farm = new Farm();
         addObject(farm, 750, 560);
         
@@ -100,7 +105,6 @@ public class GameScreen extends World
         Upgrade3Owned upgrade3Owned = new Upgrade3Owned();
         addObject(upgrade3Owned, 1270, 520);
         
-        
     }
     
     public void act()
@@ -108,13 +112,13 @@ public class GameScreen extends World
         //Grandma upgrade
         if(timer.millisElapsed() > 1000 && Upgrade2Button.grandmaCount >=1)
         {
-            ScoreDisplay.score += Upgrade2Button.grandmaCount;
+            ScoreDisplay.score += (Upgrade2Button.grandmaCount *50);
         }
         
         //Farm upgrade
         if(timer.millisElapsed() > 1000 && Upgrade3Button.farmCount >=1)
         {
-            ScoreDisplay.score += (Upgrade3Button.farmCount *2);
+            ScoreDisplay.score += (Upgrade3Button.farmCount *100);
         }
         
         if(timer.millisElapsed() > 1000)

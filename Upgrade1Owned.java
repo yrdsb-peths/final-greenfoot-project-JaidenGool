@@ -13,13 +13,13 @@ public class Upgrade1Owned extends Actor
     
     public Upgrade1Owned()
     {
-        GreenfootImage image = new GreenfootImage("Owned: " + Upgrade1Button.cursorCount, 24, fore, back);
+        GreenfootImage image = new GreenfootImage(" Owned: " + Upgrade1Button.cursorCount + " ", 24, fore, back);
         setImage(image);
     }
     
     public void act()
     {
-        GreenfootImage image = new GreenfootImage("Owned: " + Upgrade1Button.cursorCount, 24, fore, back);
+        GreenfootImage image = new GreenfootImage(" Owned: " + Upgrade1Button.cursorCount + " ", 24, fore, back);
         setImage(image);
     }
 }

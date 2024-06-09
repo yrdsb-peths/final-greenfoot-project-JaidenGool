@@ -13,12 +13,12 @@ public class Upgrade2Disc extends Actor
     Color back = new Color(189, 181, 159);
     public Upgrade2Disc()
     {
-        GreenfootImage image = new GreenfootImage("Grandma Upgrade\nBakes 1+ cookie per second", 30, fore, back);
+        GreenfootImage image = new GreenfootImage("Grandma Upgrade\nBakes 50+ cookie per second", 30, fore, back);
         setImage(image);
     }
     public void act()
     {
-        GreenfootImage image = new GreenfootImage("Grandma Upgrade\nBakes 1+ cookie per second", 30, fore, back);
+        GreenfootImage image = new GreenfootImage("Grandma Upgrade\nBakes 50+ cookie per second", 30, fore, back);
         setImage(image);
     }
 }

@@ -13,13 +13,18 @@ public class Upgrade1Button extends Actor
     public static int upgradeReqScaling = 3;
     public static int score = 0;
     public static int cursorCount = 0;
+    Color fore = new Color(255, 255, 255, 255);
+    Color back = new Color(189, 181, 159);
     
     public Upgrade1Button()
     {
         upgradeReq = 100;
-        upgradeReqScaling = 3;
+        upgradeReqScaling = 2;
         score = 0;
         cursorCount = 0;
+        
+        GreenfootImage image = new GreenfootImage("     Buy     ", 24, fore, back);
+        setImage(image);
     }
     
     public void act()

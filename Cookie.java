@@ -15,12 +15,14 @@ public class Cookie extends Actor
         turn(-1);
         cookieClicked();
         
-        if(Greenfoot.mouseClicked(null))
+        if(Greenfoot.mouseClicked(this))
         {
             MouseInfo mouse = Greenfoot.getMouseInfo();
             if(mouse != null)
             {
-                getWorld().addObject(new ClickEffect(), mouse.getX(), mouse.getY());
+                ClickEffect clickEffect = new ClickEffect();
+                getWorld().addObject(clickEffect, mouse.getX(), mouse.getY());
+                clickEffect.turnTowards(Greenfoot.getRandomNumber(1440), Greenfoot.getRandomNumber(950));
             }
         }
     }

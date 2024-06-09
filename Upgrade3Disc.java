@@ -13,12 +13,12 @@ public class Upgrade3Disc extends Actor
     Color back = new Color(189, 181, 159);
     public Upgrade3Disc()
     {
-        GreenfootImage image = new GreenfootImage("Farm Upgrade\nFarms 2+ cookies per second", 30, fore, back);
+        GreenfootImage image = new GreenfootImage("Farm Upgrade\nFarms 100+ cookies per second", 30, fore, back);
         setImage(image);
     }
     public void act()
     {
-        GreenfootImage image = new GreenfootImage("Farm Upgrade\nFarms 2+ cookie per second", 30, fore, back);
+        GreenfootImage image = new GreenfootImage("Farm Upgrade\nFarms 100+ cookie per second", 30, fore, back);
         setImage(image);
     }
 }
