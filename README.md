@@ -2,7 +2,7 @@
 
 ## Information
 - Created by: Jaiden Gool
-- Last updated: 2024-06-08
+- Last updated: 2024-06-10
 - Features to add:
     1. Upgrade system &#9745;
     2. Music &#9745;
@@ -29,5 +29,7 @@
 <br/><br/>
 <br/><br/>
 <br/><br/>
-Something special happens when the Cat is pet...
+
+<p><span style="color:red"><em>Something special happens when the cat is pet...</span></p>
+
 
