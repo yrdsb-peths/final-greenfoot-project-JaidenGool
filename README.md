@@ -7,8 +7,8 @@
     1. Upgrade system &#9745;
     2. Music &#9745;
     3. Images for upgrades &#9745;
-    4. Cheat menu [ ]
-    5. Cat animation [ ]
+    4. Cheats &#9745;
+    5. Cat animation &#9745;
 
 ## What is this project?
 - This project is a remake of the game **"Cookie Clicker"**.
@@ -22,4 +22,12 @@
 - Music:
     - [click - C418](https://youtu.be/yrn7eInApnc?si=Hpm-PQMG9HuFblXC)
 
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+Something special happens when the Cat is pet...
 
