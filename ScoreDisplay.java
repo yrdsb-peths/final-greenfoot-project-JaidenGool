@@ -1,5 +1,6 @@
 import greenfoot.*;
 import java.util.*;
+import java.math.BigInteger;
 
 /**
  * Displays amount of cookies currently owned
@@ -22,7 +23,23 @@ public class ScoreDisplay extends Actor
     }
     public void act()
     {
-        GreenfootImage image = new GreenfootImage("Cookies: " + score, 70, fore, back);
-        setImage(image);
+        if(score >= 999999999)
+        {
+            GreenfootImage image = new GreenfootImage("Cookies: " + (score/1000000000) + "B", 70, fore, back);
+            setImage(image);
+        }
+        
+        else if(score >= 999999)
+        {
+            GreenfootImage image = new GreenfootImage("Cookies: " + (score/1000000) + "M", 70, fore, back);
+            setImage(image);
+        }
+        
+        else
+        {
+            GreenfootImage image = new GreenfootImage("Cookies: " + score, 70, fore, back);
+            setImage(image);
+        }
+        
     }
 }

@@ -40,7 +40,7 @@ public class Upgrade3Button extends Actor
                 farmCount++;
                 ScoreDisplay.score -= upgradeReq;
                 click.play();
-                upgradeReq *= upgradeReqScaling;
+                upgradeReq += 150;
             }
         }
     }

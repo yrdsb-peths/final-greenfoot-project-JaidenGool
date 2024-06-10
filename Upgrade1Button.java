@@ -39,11 +39,11 @@ public class Upgrade1Button extends Actor
         {
             if(ScoreDisplay.score >= upgradeReq)
             {
-                ScoreDisplay.scoreScaling++;
+                ScoreDisplay.scoreScaling+=10;
                 ScoreDisplay.score -= upgradeReq;
                 click.play();
                 cursorCount++;
-                upgradeReq *= upgradeReqScaling;
+                upgradeReq += 75;
             }
         }
     }

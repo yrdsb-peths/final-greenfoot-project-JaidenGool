@@ -31,6 +31,7 @@ public class Cat extends Actor
     public void act()
     {
         animateCat();
+        catClicked();
     }
     
     public void animateCat()
@@ -51,6 +52,14 @@ public class Cat extends Actor
                 move(4);
             }
             
+        }
+    }
+    
+    public void catClicked()
+    {
+        if(Greenfoot.mouseClicked(this))
+        {
+            ScoreDisplay.score*=2;
         }
     }
 }
