@@ -5,14 +5,10 @@
 - Last updated: 2024-06-08
 - Features to add:
     1. Upgrade system &#9745;
-    2. Numeronyms for bigger numbers [ ]
-    3. Temporary multipliers for reaching a certain amount of cookies [ ]
-    4. Music &#9745;
-    5. Images for upgrades &#9745;
-    6. Themes [ ]
-    7. Custom cursor [ ]
-    8. More sounds [ ]
-    9. Final cookie goal (end of game) [ ]
+    2. Music &#9745;
+    3. Images for upgrades &#9745;
+    4. Cheat menu [ ]
+    5. Cat animation [ ]
 
 ## What is this project?
 - This project is a remake of the game **"Cookie Clicker"**.

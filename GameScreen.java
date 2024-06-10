@@ -25,9 +25,23 @@ public class GameScreen extends World
         Frame frame = new Frame();
         addObject(frame, 1000, 450);
         
+        Cat cat = new Cat();
+        addObject(cat, 50, 50);
+        
+        Label upgradesLabel = new Label("Upgrades", 50);
+        addObject(upgradesLabel, 1010, 150);
+        
         //Factory name
-        Label factoryName = new Label(StartScreen.factoryName + "'s factory", 50);
-        addObject(factoryName, getWidth()/4 - 85, 100);
+        if(StartScreen.factoryName.isEmpty())
+        {
+            Label factoryName = new Label("Your factory", 50);
+            addObject(factoryName, getWidth()/4 - 95, 100);
+        }
+        else
+        {
+            Label factoryName = new Label(StartScreen.factoryName + "'s factory", 50);
+            addObject(factoryName, getWidth()/4 - 85, 100);
+        }
         
         //Displays cookies owned
         CookiesPS cookiesPs = new CookiesPS();
