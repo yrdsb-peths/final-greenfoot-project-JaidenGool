@@ -9,6 +9,7 @@
     3. Images for upgrades &#9745;
     4. Cheats &#9745;
     5. Cat animation &#9745;
+    6. Final goal &#9745;
 
 ## What is this project?
 - This project is a remake of the game **"Cookie Clicker"**.
@@ -21,6 +22,10 @@
 ## Credit
 - Music:
     - [click - C418](https://youtu.be/yrn7eInApnc?si=Hpm-PQMG9HuFblXC)
+- Images:
+    - [Cat Image](https://www.pinterest.ca/pin/604819424939756338/)
+    - [Cookie, Farm and Grandma picture](https://orteil.dashnet.org/cookieclicker/img/?C=M;O=A)
+
 
 <br/><br/>
 <br/><br/>
@@ -32,4 +37,4 @@
 
 <p><span style="color:red"><em>Something special happens when the cat is pet...</span></p>
 
-
+>! Hi
