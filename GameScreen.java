@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class GameScreen extends World
 {
     private SimpleTimer timer = new SimpleTimer();
+    GreenfootImage goalsText = new GreenfootImage("goals.png");
     
     public GameScreen()
     {   
@@ -25,11 +26,25 @@ public class GameScreen extends World
         Frame frame = new Frame();
         addObject(frame, 1000, 450);
         
+        // It is a cat at the top left
         Cat cat = new Cat();
         addObject(cat, 50, 50);
         
         Label upgradesLabel = new Label("Upgrades", 50);
         addObject(upgradesLabel, 1010, 150);
+        
+        //Goals text
+        GreenfootImage goalsText = new GreenfootImage("goals.png");
+        goalsText.scale(180, 65);
+        getBackground().drawImage(goalsText, 710, 680);
+        
+        //Goal Description
+        GoalDescription goalDescription = new GoalDescription();
+        addObject(goalDescription, 1040, 716);
+        
+        //Goal Button
+        GoalBuyButton goalBuyButton = new GoalBuyButton();
+        addObject(goalBuyButton, 1270, 716);
         
         //Factory name
         if(StartScreen.factoryName.isEmpty())
@@ -43,7 +58,7 @@ public class GameScreen extends World
             addObject(factoryName, getWidth()/4 - 85, 100);
         }
         
-        //Displays cookies owned
+        //Displays cookies gained per second
         CookiesPS cookiesPs = new CookiesPS();
         addObject(cookiesPs, getWidth()/4 - 85, getHeight()/2 + 200);
         
@@ -69,7 +84,7 @@ public class GameScreen extends World
         
         // Label to display cookies owned
         ScoreDisplay scoreDisplay = new ScoreDisplay();
-        addObject(scoreDisplay, getWidth()/4 -100, 200);
+        addObject(scoreDisplay, getWidth()/4 -90, 200);
         
         //Upgrade 1 Description
         Upgrade1Disc upgrade1Disc = new Upgrade1Disc();

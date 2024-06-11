@@ -11,10 +11,11 @@ public class StartScreen extends World
     //Background Music
     GreenfootSound bgMusic = new GreenfootSound("click.mp3");
     //Title
-    Label titleLabel = new Label("Cookie Clicker", 75);
+    //Label titleLabel = new Label("Cookie Clicker", 75);
+    GreenfootImage title = new GreenfootImage("title.png");
     
     //Instructions
-    Label instructionLabel = new Label("Press Enter to start", 65);
+    GreenfootImage instruction = new GreenfootImage("instruction.png");
     
     public static String factoryName = "";
     
@@ -27,9 +28,14 @@ public class StartScreen extends World
     {    
         super(1440, 900, 1, false);
         
-        addObject(titleLabel, getWidth()/2, 260);
-        addObject(instructionLabel, getWidth()/2, 400);
+        getBackground().drawImage(title, 450, 260);
+        getBackground().drawImage(instruction, 330, 350);
         bgMusic.playLoop();
+        
+        Cookie cookie = new Cookie();
+        GreenfootImage cookieScale = cookie.getImage();
+        cookieScale.scale(200, 200);
+        addObject(cookie, getWidth()/2, 600);
     }
     
     public void act()
