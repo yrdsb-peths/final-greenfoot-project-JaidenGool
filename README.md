@@ -18,6 +18,7 @@
 - To begin playing the game, all you have to do is click on the cookie. Every time you click the cookie, your counter will go up.
 - Using your cookies that you gain from clicking, you can buy upgrades to further boost your cookie collection.
 - Upgrade your methods to reach the final goal by gathering a certain large amount of cookies.
+>! Hi
 
 ## Credit
 - Music:
@@ -36,5 +37,3 @@
 <br/><br/>
 
 <p><span style="color:red"><em>Something special happens when the cat is pet...</span></p>
-
->! Hi
