@@ -32,12 +32,18 @@ public class GoalBuyButton extends Actor
     {
         if(Greenfoot.mouseClicked(this))
         {
-            if(score >= upgradeReq)
+            if(score >= upgradeReq && upgradeReq != 500000000)
             {
                 ScoreDisplay.score -= upgradeReq;
                 click.play();
                 GoalDescription.gameGoal*=5;
             }
+        }
+        
+        if(Greenfoot.mouseClicked(this) && upgradeReq == 500000000 && score >= 500000000)
+        {
+            upgradeReq = 1000;
+            Greenfoot.setWorld(new EndScreen());
         }
     }
 }

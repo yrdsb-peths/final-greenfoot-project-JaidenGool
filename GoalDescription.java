@@ -24,6 +24,10 @@ public class GoalDescription extends Actor
         if(gameGoal >= 500000000)
         {
             gameGoal = 500000000;
+            if(ScoreDisplay.score == 0)
+            {
+                gameGoal = 1000;
+            }
             GreenfootImage image = new GreenfootImage("   Final goal:   \n   500M cookies   ", 30, fore, back);
             setImage(image);
         }
