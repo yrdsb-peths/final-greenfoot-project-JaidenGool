@@ -19,12 +19,6 @@
 - Using your cookies that you gain from clicking, you can buy upgrades to further boost your cookie collection.
 - Upgrade your methods to reach the final goal by gathering a certain large amount of cookies.
 
-<details> 
-  <summary>Cheat spoilers</summary>
-   A1: JavaScript 
-</details>
-
-
 ## Credit
 - Music:
     - [click - C418](https://youtu.be/yrn7eInApnc?si=Hpm-PQMG9HuFblXC)
@@ -47,3 +41,5 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Clicking on the cat doubles the amount of cookies you currently have. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Be careful not to go past the integer limit (2,147,483,647).
 </details>
+
+![Alt text](https://cdn.discordapp.com/attachments/783872773286133783/1250239505525379192/catopen.png?ex=666a37c6&is=6668e646&hm=d7c20dd2fbc2306b72b759cab411609652e472990e5a81485ade4d31cddef48a&)
