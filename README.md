@@ -2,7 +2,7 @@
 
 ## Information
 - Created by: Jaiden Gool
-- Last updated: 2024-06-10
+- Last updated: 2024-06-11
 - Features to add:
     1. Upgrade system &#9745;
     2. Music &#9745;
