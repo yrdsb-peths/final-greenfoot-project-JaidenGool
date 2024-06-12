@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class StartScreen extends World
 {
     //Background Music
-    GreenfootSound bgMusic = new GreenfootSound("click.mp3");
+    public static GreenfootSound bgMusic = new GreenfootSound("click.mp3");
     //Title
     //Label titleLabel = new Label("Cookie Clicker", 75);
     GreenfootImage title = new GreenfootImage("title.png");
@@ -30,7 +30,6 @@ public class StartScreen extends World
         
         getBackground().drawImage(title, 450, 260);
         getBackground().drawImage(instruction, 330, 350);
-        bgMusic.playLoop();
         
         Cookie cookie = new Cookie();
         GreenfootImage cookieScale = cookie.getImage();

@@ -19,6 +19,8 @@ public class GameScreen extends World
         //Initialize timer
         timer.mark();
         
+        StartScreen.bgMusic.playLoop();
+        
         // Sets the order for objects
         setPaintOrder(ClickEffect.class, Cookie.class, GlowEffect.class);
         
