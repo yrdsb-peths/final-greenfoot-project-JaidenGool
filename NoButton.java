@@ -17,6 +17,10 @@ public class NoButton extends Actor
     {
         if(Greenfoot.mouseClicked(this))
         {
+            if(StartScreen.bgMusic.isPlaying())
+            {
+                StartScreen.bgMusic.stop();
+            }
             Greenfoot.stop();
         }
     }
