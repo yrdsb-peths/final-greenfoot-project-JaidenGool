@@ -10,6 +10,7 @@
     4. Cheats &#9745;
     5. Cat animation &#9745;
     6. Final goal &#9745;
+    7. More &#9745;
 
 ## What is this project?
 - This project is a remake of the game **"Cookie Clicker"**.
