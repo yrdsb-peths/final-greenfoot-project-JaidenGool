@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class NoButton here.
+ * Stops the game and music
  * 
  * @author (your name) 
  * @version (a version number or a date)
@@ -15,6 +15,7 @@ public class NoButton extends Actor
     
     public void buttonClicked()
     {
+        //Stops game and music when clicked
         if(Greenfoot.mouseClicked(this))
         {
             if(StartScreen.bgMusic.isPlaying())

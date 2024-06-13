@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ClickEffect here.
+ * Click effect
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jaiden Gool
+ * @version 2024-06-12
  */
 public class ClickEffect extends Actor
 {
@@ -22,6 +22,7 @@ public class ClickEffect extends Actor
     
     public void act()
     {
+        //Fading effect
         transparency -= 5;
         turn(3);
         move(1);
@@ -40,6 +41,7 @@ public class ClickEffect extends Actor
     
     public void cookieClicked()
     {
+        //Adds effect where cursor is when cookie is clicked
         if(Greenfoot.mouseClicked(this))
         {
             ScoreDisplay.score+=(1 * (int)ScoreDisplay.scoreScaling);

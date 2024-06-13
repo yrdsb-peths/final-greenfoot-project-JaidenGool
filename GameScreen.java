@@ -19,6 +19,7 @@ public class GameScreen extends World
         //Initialize timer
         timer.mark();
         
+        //Loops music
         StartScreen.bgMusic.playLoop();
         
         // Sets the order for objects
@@ -51,11 +52,13 @@ public class GameScreen extends World
         //Factory name
         if(StartScreen.factoryName.isEmpty())
         {
+            //If no name is entered
             Label factoryName = new Label("Your factory", 50);
             addObject(factoryName, getWidth()/4 - 95, 100);
         }
         else
         {
+            //If a name is entered
             Label factoryName = new Label(StartScreen.factoryName + "'s factory", 50);
             addObject(factoryName, getWidth()/4 - 85, 100);
         }

@@ -15,6 +15,7 @@ public class Cookie extends Actor
         turn(-1);
         cookieClicked();
         
+        //Displays click effect when clicked
         if(Greenfoot.mouseClicked(this))
         {
             MouseInfo mouse = Greenfoot.getMouseInfo();
